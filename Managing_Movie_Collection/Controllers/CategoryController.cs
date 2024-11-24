@@ -16,6 +16,7 @@ namespace Managing_Movie_Collection.Controllers
             _categoryRepo = categoryRepo;
         }
         [HttpPost]
+
         public IActionResult AddCategory(GetAllCategory_Dto category)
         {
             _categoryRepo.Add(category);
